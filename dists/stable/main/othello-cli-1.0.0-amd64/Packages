@@ -1,0 +1,67 @@
+Package: libc6
+Source: glibc
+Version: 2.39-0ubuntu8.6
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 13431
+Depends: libgcc-s1
+Recommends: libidn2-0 (>= 2.0.5~)
+Suggests: glibc-doc, debconf | debconf-2.0, locales, libnss-nis, libnss-nisplus
+Breaks: chrony (<< 4.2-3~), cyrus-imapd (<< 3.6.1-2ubuntu1), fakechroot (<< 2.19-3.5), firefox (<< 91~), firefox-esr (<< 91~), gnumach-image-1.8-486 (<< 2:1.8+git20210923~), gnumach-image-1.8-486-dbg (<< 2:1.8+git20210923~), gnumach-image-1.8-xen-486 (<< 2:1.8+git20210923~), gnumach-image-1.8-xen-486-dbg (<< 2:1.8+git20210923~), hurd (<< 1:0.9.git20220301-2), locales (<< 2.39), locales-all (<< 2.39), nscd (<< 2.39), python3-iptables (<< 1.0.0-2), scipy (<< 1.10.1-10build1), tinydns (<< 1:1.05-14), valgrind (<< 1:3.19.0-1~)
+Replaces: libc6-amd64
+Filename: ./parts/othello/stage_packages/libc6_2.39-0ubuntu8.6_amd64.deb
+Size: 3262958
+MD5sum: f8316899ea3deeaf782749b5da19be84
+SHA1: 203f7a38afdf8959e97e65d84bba694d0aeacde5
+SHA256: cb11743530ba3ee0f943f4124b13dac50363a36842d682be65cd2beb5073c33e
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: https://www.gnu.org/software/libc/libc.html
+Description: GNU C Library: Shared libraries
+ Contains the standard libraries that are used by nearly all programs on
+ the system. This package includes shared versions of the standard C library
+ and the standard math library, as well as many others.
+Original-Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
+Original-Vcs-Browser: https://salsa.debian.org/glibc-team/glibc
+Original-Vcs-Git: https://salsa.debian.org/glibc-team/glibc.git
+
+Package: othello
+Version: 1.0
+Architecture: amd64
+Maintainer: Hantaro1917
+Filename: ./termi-othello.deb
+Size: 19436
+MD5sum: ab6dfd0e6963aa040cbd2db02b48f406
+SHA1: 2df6982fb419522e8b452e39661f54f00ebeab35
+SHA256: 0fd3cb5b20b02d0814ccb28e84a113d1a251d9ef09e14e8c4ceee45bc1485c48
+Section: games
+Priority: optional
+Description: Terminal-based ASCII Othello game written in C++
+
+Package: othello-cli
+Version: 1.0
+Architecture: amd64
+Maintainer: Hantaro1917
+Filename: ./othello-cli_1.0_amd64.deb
+Size: 19436
+MD5sum: 2e56a3ec0cb63b3091e1bcc1e5f79b95
+SHA1: 9c6e109d87c7c7cb185f4f25ea3df18cbf2d5682
+SHA256: 8c1defff0e20c3cc57ba8535a4bf3e61332020a7ec322c82859ffddcf82c766a
+Section: games
+Priority: optional
+Description: Terminal-based ASCII Othello game written in C++
+
+Package: othello-cli
+Version: 1.0
+Architecture: amd64
+Maintainer: Hantaro1917
+Filename: ./dists/stable/main/othello-cli-1.0.0-amd64/othello-cli_1.0_amd64.deb
+Size: 19436
+MD5sum: 2e56a3ec0cb63b3091e1bcc1e5f79b95
+SHA1: 9c6e109d87c7c7cb185f4f25ea3df18cbf2d5682
+SHA256: 8c1defff0e20c3cc57ba8535a4bf3e61332020a7ec322c82859ffddcf82c766a
+Section: games
+Priority: optional
+Description: Terminal-based ASCII Othello game written in C++
+
