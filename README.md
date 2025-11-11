@@ -67,25 +67,6 @@ sudo apt update
 sudo apt install othello-cli
 ```
 
-### Build (simple)
-
-From project root:
-
-```bash
-# quick one-file-ish compile (adjust for subfolders)
-g++ -std=c++17 src/main.cpp src/game.cpp src/board.cpp src/renderer.cpp src/utils.cpp src/color.cpp -o othello
-
-# or use the provided CMake build
-mkdir -p build && cd build
-cmake ..
-make -j
-./Othello
-```
-
-(Windows: run `othello.exe`)
-
-Tip: If compilation fails because of missing headers, ensure the `.hpp` files are present in the right include path and adjust the compile command accordingly.
-
 ---
 
 ## Controls
