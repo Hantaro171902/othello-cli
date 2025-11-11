@@ -34,6 +34,39 @@ Example (replace with your files):
 - A C++17-capable compiler (g++ / clang / MSVC).
 - Terminal that supports UTF-8 + ANSI color codes (Linux terminal, macOS Terminal/iTerm2, Windows Terminal recommended).
 
+### Installation (Debian/Ubuntu)
+
+**Recommended: One-Line Install**
+
+This command will automatically add the repository and its GPG key.
+
+```bash
+curl -sS https://hantaro171902.github.io/othello-cli/install.sh | sudo bash
+```
+
+**Manual Installation**
+
+If you prefer to add the repository manually, follow these steps:
+
+1.  **Add the GPG Key:**
+    ```bash
+    curl -sS https://hantaro171902.github.io/othello-cli/public.key | sudo gpg --dearmor -o /usr/share/keyrings/othello-cli-repo.gpg
+    ```
+
+2.  **Add the repository to your sources list:**
+    ```bash
+    echo "deb [signed-by=/usr/share/keyrings/othello-cli-repo.gpg] https://hantaro171902.github.io/othello-cli stable main" | sudo tee /etc/apt/sources.list.d/othello-cli.list
+    ```
+
+**Install the Game**
+
+After setting up the repository (either with the one-liner or manually), update your package list and install the game:
+
+```bash
+sudo apt update
+sudo apt install othello-cli
+```
+
 ### Build (simple)
 
 From project root:
