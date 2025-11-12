@@ -10,8 +10,8 @@ grade: stable
 confinement: strict
 
 apps:
-  othello-cli:
-    command: usr/games/othello-cli
+  othello:
+    command: usr/local/bin/othello
 
 parts:
   othello-cli:
