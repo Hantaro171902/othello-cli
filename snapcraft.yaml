@@ -1,0 +1,22 @@
+name: othello-cli
+base: core22
+version: '1.0.0'
+summary: A command-line Othello game.
+description: |
+  Play Othello (Reversi) in your terminal. This is a simple
+  command-line implementation of the classic board game.
+
+grade: stable
+confinement: strict
+
+apps:
+  othello-cli:
+    command: usr/games/othello-cli
+
+parts:
+  othello-cli:
+    plugin: dump
+    source: dists/stable/main/othello-cli-1.0.0-amd64/othello-cli_1.0_amd64.deb
+    source-type: deb
+    stage-packages:
+      - libc6
