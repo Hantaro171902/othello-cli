@@ -10,7 +10,7 @@ grade: stable
 confinement: strict
 
 apps:
-  othello:
+  othello-cli:
     command: usr/local/bin/othello
 
 parts:
@@ -20,3 +20,4 @@ parts:
     source-type: deb
     stage-packages:
       - libc6
+      - libstdc++6
